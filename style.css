@@ -1,0 +1,75 @@
+:root{
+
+}
+
+body{
+    margin:auto;
+}
+
+.input{
+    display:block;
+    width:45%;
+    margin:auto;
+    padding:1rem;
+    box-sizing: border-box;
+}
+
+.input label{
+    display:block;
+    margin:auto;
+    padding:0.5rem 0;
+    width:50%
+}
+
+.input input{
+    box-sizing:border-box;
+    display:block;
+    margin:auto;
+    width:50%;
+    padding:0.5rem;
+
+}
+
+.button{
+    display: block;
+    margin:auto;
+    padding:0.5rem;
+    width:45%;
+    box-sizing: border-box;
+}
+
+#btn-calculate{
+    display: block;
+    padding: 0.1rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    width:5rem;
+}
+
+.output{
+    display:block;
+    box-sizing:border-box;
+    width:45%;
+    padding:1rem;
+    margin:auto;
+}
+
+.output label{
+    display:block;
+    margin:auto;
+    padding:0.5rem 0;
+    width:50%
+}
+
+.output div{
+    box-sizing: border-box;
+    padding:0.5rem 1rem;
+    margin:auto;
+    border-style: solid;
+    border-width:1px;
+    width:50%;
+    min-height:20vh;
+}
+
+
+

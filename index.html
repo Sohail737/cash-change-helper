@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input">
+        <label for="input-amount">Enter the amount to be paid</label>
+        <input name="amount" id="input-amount" onkeypress="checkAmountAndEnableCash()">
+    </div>
+    
+    <div class="input">
+        <label for="input-cash">Enter the cash given</label>
+        <input name="cash" id="input-cash" onkeypress="checkCash()">
+    </div>
+
+    <div class="button">
+        <!-- <input type="submit" value="Calculate" id="btn-calculate"> -->
+        <button id="btn-calculate">Calculate</button>
+    </div>
+    
+    <div class=output>
+        
+        <label for="output-change">Change to give to customer : </label>
+        <div id="output-change"></div>
+    </div>
+
+    <script type="text/javascript" src="change.js"></script>
+</body>
+</html>
