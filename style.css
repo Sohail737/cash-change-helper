@@ -30,14 +30,6 @@ body{
 
 }
 
-.button{
-    display: block;
-    margin:auto;
-    padding:0.5rem;
-    width:45%;
-    box-sizing: border-box;
-}
-
 #btn-calculate{
     display: block;
     padding: 0.1rem;
@@ -69,6 +61,7 @@ body{
     border-width:1px;
     width:50%;
     min-height:20vh;
+    text-align: center;
 }
 
 
