@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Helper</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="input">
-        <label for="input-amount">Enter the amount to be paid</label>
-        <input name="amount" id="input-amount">
-    </div>
-    
-    <div class="input">
-        <label for="input-cash">Enter the cash given</label>
-        <input name="cash" id="input-cash">
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Helper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0f22f370f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Cash Helper</h1>
+    </header>
+    <div class="container-center">
+      <div class="input">
+        <label for="input-amount">Enter the amount to be collected</label>
+        <input name="amount" id="input-amount" />
+      </div>
 
-    <div class="input">
+      <div class="input">
+        <label for="input-cash">Enter the cash given</label>
+        <input name="cash" id="input-cash" />
+      </div>
+
+      <div class="input">
         <!-- <input type="submit" value="Calculate" id="btn-calculate"> -->
         <button id="btn-calculate">Calculate</button>
+      </div>
     </div>
-    
-    <div class=output>
-        
-        <label for="output-change">Change to give to customer : </label>
+    <div class="container-center">
+      <div class="output">
+        <label for="output-change">Change to be given : </label>
         <div id="output-change"></div>
+      </div>
     </div>
+    <footer class="footer">
+      <p>Do you often get stuck when giving change to customer, use our cash helper and get the min no of notes in which you can return change to your customer and save your precious time</p>
+      <div class="footer-header">Connect Socially</div>
 
-    <script type="text/javascript" src="change.js"></script>
-</body>
+      <ul class="list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link fa fa-github" href="https://github.com/Sohail737"></a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link fa fa-linkedin"
+            href="https://www.linkedin.com/in/sohailansari737/"
+          ></a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link fa fa-twitter"
+            href="https://twitter.com/SohailA09324270"
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script type="text/javascript" src="cash-helper.js"></script>
+  </body>
 </html>

@@ -1,68 +1,178 @@
-:root{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 
+:root {
+  --blue: #4c1d95;
+  --voilet: #7c3aed;
+  --lightBlue: #3b82f6;
+  --white: white;
+  --black: black;
+  --hf:#6B7280;
 }
 
-body{
-    margin:auto;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
 }
 
-.input{
-    display:block;
-    width:45%;
-    margin:auto;
-    padding:1rem;
-    box-sizing: border-box;
+.hero {
+  text-align: center;
+  background-color: var(--hf);
+  margin: auto;
+  padding: 0.5rem 0;
+  color: var(--white);
 }
 
-.input label{
-    display:block;
-    margin:auto;
-    padding:0.5rem 0;
-    width:50%
+.hero h1 {
+  margin-block-start: 0.45rem;
+  margin-block-end: 0.45rem;
 }
 
-.input input{
-    box-sizing:border-box;
-    display:block;
-    margin:auto;
-    width:50%;
-    padding:0.5rem;
-
+.container-center {
+  max-width: 450px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  background-color: var(--voilet);
+  box-shadow: 10px 5px 5px var(--blue);
 }
 
-#btn-calculate{
-    display: block;
-    padding: 0.1rem;
-    margin: 0.5rem auto;
-    cursor: pointer;
-    width:5rem;
+.input {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.output{
-    display:block;
-    box-sizing:border-box;
-    width:45%;
-    padding:1rem;
-    margin:auto;
+.input label {
+  display: block;
+  margin: auto;
+  padding: 0.5rem 0;
+  width: 100%;
+  font-weight: bolder;
+  font-size: larger;
 }
 
-.output label{
-    display:block;
-    margin:auto;
-    padding:0.5rem 0;
-    width:50%
+.input input {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
 }
 
-.output div{
-    box-sizing: border-box;
-    padding:0.5rem 1rem;
-    margin:auto;
-    border-style: solid;
-    border-width:1px;
-    width:50%;
-    min-height:20vh;
-    text-align: center;
+/* #btn-calculate {
+  display: block;
+  padding: 0.1rem;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  width: 7rem;
+  background-color: var(--white);
+  outline: none;
+  font-weight: bolder;
+  font-size: larger;
+} */
+
+#btn-calculate {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  outline: none;
+  font-weight: bolder;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: large;
+  display:block;
+  margin:auto;
+}
+.output {
+  display: block;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 1rem;
+  padding-bottom: 1.6rem;
+  margin: auto;
+  min-height: 20vh;
+  
 }
 
+.output label {
+  display: block;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  font-weight: bolder;
+  font-size: larger;
+}
 
+/* .output div {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  min-height: 20vh;
+  text-align: center;
+  background-color: var(--voilet);
+  border-radius: 1rem;
+} */
 
+.output-table {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--black);
+  border-collapse: collapse;
+  background-color: white;
+  outline: none;
+  width: 100%;
+}
+
+.output-table > thead > tr > td {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--black);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.output-table > tbody > tr > td {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--black);
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.footer {
+  background-color: var(--hf);
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: var(--white);
+}
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer .link {
+  color: var(--white);
+}
+.footer .footer-header {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.footer p {
+  font-size: larger;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  max-width: 1rem;
+}
