@@ -176,3 +176,11 @@ body {
   padding: 0.5rem 1rem;
   max-width: 1rem;
 }
+
+
+@media only screen and (max-width: 430px) {
+
+  .container-center{
+    max-width:300px;
+  }
+}
